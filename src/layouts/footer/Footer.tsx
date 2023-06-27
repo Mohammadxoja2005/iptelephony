@@ -1,8 +1,27 @@
-import { FC } from 'react'
+import { FC, useState } from 'react'
 // axios
-// import axios from 'axios'
+import axios from 'axios'
 
 const Footer: FC = () => {
+    const [name, setName] = useState<string>('');
+    const [phone, setPhone] = useState<string>('');
+
+    const onSubmit = (e: any) => {
+        e.preventDefault();
+
+        if (name == '' || phone == '') {
+            alert("Заполните все поля")
+        }
+
+        axios.post("http://localhost:3004/create",
+            {
+                name: name,
+                phone: phone,
+                responsible_id: 9636770,
+                deal_name: "IP-телефония"
+            })
+    }
+
     return (
         <footer className="site-footer" id="site-footer">
             <div className="footer-column left-side">
@@ -149,7 +168,7 @@ const Footer: FC = () => {
                         Посмотрите на нас в деле, оставьте свой номер телефона – мы
                         обязательно вам перезвоним.
                     </p>
-                    <form className="contact-form" action="/contact.php" method="post">
+                    <form className="contact-form">
                         <label className="form-label" htmlFor="name">
                             Введите имя
                         </label>
@@ -160,8 +179,9 @@ const Footer: FC = () => {
                             minLength={4}
                             maxLength={86}
                             name="name"
-
+                            onChange={(e) => setName(e.target.value)}
                             autoComplete="off"
+                            required={true}
                         />
                         {/* <label className="form-label" htmlFor="email">
                             Введите Email
@@ -183,8 +203,9 @@ const Footer: FC = () => {
                             id="tel"
                             type="tel"
                             name="tel"
-
+                            onChange={(e) => setPhone(e.target.value)}
                             autoComplete="off"
+                            required={true}
                         />
                         {/* <div
                             className="g-recaptcha"
@@ -222,7 +243,7 @@ const Footer: FC = () => {
                             </div>
                             <iframe style={{ display: "none" }} />
                         </div> */}
-                        <button className="btn-link form-submit" type="submit">
+                        <button onClick={onSubmit} className="btn-link form-submit">
                             Записаться на бесплатный аудит
                         </button>
                     </form>
