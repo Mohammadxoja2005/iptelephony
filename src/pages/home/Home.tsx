@@ -1,8 +1,6 @@
 import { FC } from 'react'
 
 import "./index.scss"
-// icons
-import CALLCENTER from "../../assets/icons/call_center.png";
 
 const Home: FC = () => {
     return (
