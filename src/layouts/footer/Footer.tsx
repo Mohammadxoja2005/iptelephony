@@ -19,8 +19,8 @@ const Footer: FC = () => {
                 phone: phone,
                 responsible_id: 9636770,
                 deal_name: "IP-телефония"
-            }).then((response) => {
-                console.log(response);
+            }).then(() => {
+                window.location.reload();
             })
     }
 
