@@ -1,0 +1,2015 @@
+/*! CSS Used from: https://alextech.uz/css/critical.min.css */
+.btn-link,
+.site-header {
+  font-family: "Proxima Nova", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    Helvetica, "Helvetica Neue", sans-serif;
+}
+.btn-link,
+.menu-trigger {
+  background-color: transparent;
+  cursor: pointer;
+}
+.hamburger-inner::after,
+.hamburger-inner::before,
+.menu-trigger:not(.active):focus .hamburger-inner::after,
+.menu-trigger:not(.active):focus .hamburger-inner::before,
+.menu-trigger:not(.active):hover .hamburger-inner::after,
+.menu-trigger:not(.active):hover .hamburger-inner::before {
+  transition: 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.btn-link,
+.menu-item_link {
+  text-transform: uppercase;
+}
+.menu-trigger:focus {
+  outline: 0;
+}
+html ::-webkit-scrollbar {
+  width: 3px;
+  height: 0;
+  background-color: transparent;
+}
+html ::-webkit-scrollbar-thumb {
+  background-color: #d29450;
+  border-radius: 50px;
+}
+body {
+  margin: 0;
+}
+.btn-link {
+  padding: 0.83vw 1.45vw;
+  text-align: center;
+  color: #d29450;
+  text-decoration: none;
+  border: 1px solid #d29450;
+  transition: color 0.2s ease-in, color 0.2s ease-in;
+}
+.btn-link:hover {
+  color: #fff;
+  background-color: #d29450;
+}
+.site-header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9;
+  padding: 3vh 3.38vw;
+  font-size: 0.875rem;
+}
+.menu-item,
+.menu-trigger {
+  position: relative;
+}
+.contact-us_tel {
+  font-family: "Bebas Neue", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    Helvetica, "Helvetica Neue", sans-serif;
+}
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  max-width: 1px;
+  max-height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+}
+.header-menu {
+  display: flex;
+  align-items: center;
+}
+.menu-list {
+  display: flex;
+  margin-top: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+.service-menu .menu-item:not(:first-child)::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -3.5px;
+  width: 7px;
+  height: 7px;
+  background-color: #d29450;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+.menu-item_link {
+  display: inline-block;
+  padding: 0 1.43em;
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 1.15;
+  vertical-align: middle;
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  transition: color 0.4s;
+}
+.menu-item_link:focus,
+.menu-item_link:hover {
+  color: #d29450;
+}
+.service-menu {
+  margin-right: auto;
+  margin-left: auto;
+}
+.contact-us {
+  display: flex;
+  align-items: flex-start;
+  font-size: 1.5625vw;
+}
+.main-menu_wrap,
+.menu-wrap {
+  flex-direction: column;
+  display: flex;
+}
+.contact-us_item {
+  margin-right: 1em;
+  line-height: 1;
+  text-decoration: none;
+}
+.contact-us_tel {
+  font-weight: 700;
+  color: #fff;
+}
+.contact-us_tel--mobile {
+  display: none;
+}
+.menu-trigger {
+  width: 24px;
+  height: 17px;
+  padding: 0;
+  border: none;
+  transition: background-color 0.25s cubic-bezier(0.615, 0.19, 0.305, 0.91);
+}
+.menu-trigger:focus .hamburger-inner,
+.menu-trigger:focus .hamburger-inner::after,
+.menu-trigger:focus .hamburger-inner::before {
+  background-color: #d29450;
+}
+.menu-trigger.inner {
+  z-index: 5;
+}
+.hamburger-inner,
+.hamburger-inner::after,
+.hamburger-inner::before {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 3px;
+  background-color: #d29450;
+}
+.main-menu_wrap,
+.transition-layer {
+  position: fixed;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  overflow: hidden;
+  top: 0;
+  visibility: hidden;
+}
+.hamburger-inner {
+  top: 0;
+  left: 0;
+  transition: 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.hamburger-inner::after,
+.hamburger-inner::before {
+  content: "";
+  right: 0;
+  display: block;
+}
+.hamburger-inner::before {
+  top: 6px;
+}
+.hamburger-inner::after {
+  top: 12px;
+  bottom: 0;
+}
+.menu-trigger:not(.active):focus .hamburger-inner::before,
+.menu-trigger:not(.active):hover .hamburger-inner::before {
+  transform: scaleX(0.6);
+}
+.main-menu_wrap {
+  z-index: 15;
+  height: 100%;
+  padding: 3vh 3.38vw 45px;
+  text-align: center;
+  background-size: cover;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+.menu-logo-wrap {
+  display: flex;
+  align-items: center;
+}
+.menu-wrap {
+  align-items: center;
+  margin: auto 0;
+}
+.menu-social-wrap {
+  align-self: flex-start;
+}
+.transition-layer {
+  z-index: 13;
+  height: 100%;
+}
+.transition-layer .bg-layer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2500%;
+  height: 100%;
+  background: url(https://alextech.uz/img/ink.png) 0 0/100% 100% no-repeat;
+  transform: translateY(-50%);
+}
+.mobile-service-menu {
+  display: none;
+  margin-bottom: 20px;
+}
+.left-side,
+.right-side {
+  display: flex;
+}
+.main-menu {
+  flex-direction: column;
+}
+.main-menu .menu-item::after,
+.main-menu .menu-item::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 7px;
+  height: 7px;
+  background-color: #d29450;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.6s;
+}
+.main-menu .menu-item::before {
+  left: -3.5px;
+}
+.main-menu .menu-item::after {
+  right: -3.5px;
+}
+.main-menu .menu-item:hover::after,
+.main-menu .menu-item:hover::before {
+  opacity: 1;
+}
+.main-menu .menu-item {
+  margin-bottom: 1rem;
+}
+.main-menu .menu-item_link {
+  display: block;
+  font-size: 1.3em;
+}
+.left-side {
+  padding-right: 3.125vw;
+  padding-left: 3.125vw;
+}
+.fixed-menu {
+  position: fixed;
+  top: 0;
+  z-index: 8;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 16px 3.38vw;
+  font-size: 0.875rem;
+  font-family: "Proxima Nova", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    Helvetica, "Helvetica Neue", sans-serif;
+  background: linear-gradient(135deg, #2d2d2d 0, #3d3d3d 100%);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.4s;
+}
+@media screen and (min-width: 1101px) {
+  .service-menu {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .logo {
+    margin-right: auto;
+  }
+  .service-menu {
+    display: none;
+    margin-bottom: 15px;
+  }
+  .mobile-service-menu {
+    display: flex;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .service-menu .menu-item_link {
+    font-size: 0.9em;
+  }
+  .contact-us {
+    font-size: 2.6em;
+  }
+}
+@media screen and (max-width: 992px) {
+  .btn-link {
+    padding: 1em 1.5em;
+  }
+}
+@media screen and (max-width: 576px) {
+  .btn-link {
+    display: block;
+  }
+  .logo_img {
+    width: 99px;
+    height: 69px;
+  }
+  .contact-us {
+    flex-direction: column;
+    font-size: 1.6em;
+  }
+  .contact-us_item {
+    line-height: 1.4;
+  }
+}
+/*! CSS Used from: https://alextech.uz/css/main.min.css */
+.golden {
+  text-transform: uppercase;
+}
+.golden,
+a:focus,
+a:hover {
+  color: #d29450;
+}
+.company-branches,
+.flex-menu {
+  list-style-type: none;
+}
+.fixed-icons {
+  visibility: hidden;
+}
+.call-us:hover .call-us-icon,
+.footer-social:focus svg,
+.footer-social:hover svg,
+.octopus-link:hover svg {
+  fill: #d29450;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+main {
+  display: block;
+}
+h1 {
+  margin: 0.67em 0;
+  font-size: 2em;
+}
+a {
+  background-color: transparent;
+}
+button,
+input,
+textarea {
+  margin: 0;
+  font-size: 100%;
+  line-height: 1.15;
+  font-family: inherit;
+}
+button,
+input {
+  overflow: visible;
+}
+button {
+  text-transform: none;
+}
+[type="button"],
+[type="submit"],
+button {
+  -webkit-appearance: button;
+}
+textarea {
+  overflow: auto;
+}
+p {
+  font-family: "Proxima Nova", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    Helvetica, "Helvetica Neue", sans-serif;
+}
+section {
+  position: relative;
+}
+a:focus,
+a:hover {
+  transition: 0.3s;
+}
+p {
+  font-size: 1.01em;
+}
+.golden.bold {
+  font-weight: 700;
+  font-family: "Bebas Neue", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    Helvetica, "Helvetica Neue", sans-serif;
+}
+.percentage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 12;
+  height: 3px;
+  background-color: #d29450;
+}
+.percentage::before {
+  content: "";
+  display: block;
+  width: 100%;
+}
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+.form-submit:not(.error) {
+  cursor: pointer;
+}
+.octopus-link {
+  position: absolute;
+  top: 120px;
+  right: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+}
+.octopus-link svg {
+  width: 60%;
+  height: 60%;
+  transition: 0.3s;
+  fill: #fff;
+}
+.audit-heading {
+  display: block;
+  font-size: 2em;
+  font-family: BebasNeueBook, Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    Helvetica, "Helvetica Neue", sans-serif;
+  color: #fff;
+}
+.bold {
+  font-weight: 700;
+}
+.company-branches:before,
+.contacts {
+  font-family: "Bebas Neue", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    Helvetica, "Helvetica Neue", sans-serif;
+}
+.site-footer {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  background: linear-gradient(135deg, #2d2d2d 0, #3d3d3d 100%) #3d3d3d;
+}
+.footer-column {
+  flex-basis: 50%;
+  padding-top: 8.33333vw;
+}
+.footer-column.left-side {
+  display: flex;
+  background: url(https://alextech.uz/img/printer-repair-and-s.jpg) 0 0 / cover
+    no-repeat;
+}
+.form-input,
+.form-submit,
+.form-submit:hover {
+  background-color: transparent;
+}
+.left-side-wrap {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  padding-bottom: 40px;
+}
+.footer-heading {
+  margin-top: 0;
+  font-size: 2.55208vw;
+}
+.copywright,
+.footer-menu_link {
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.contacts-wrap {
+  padding: 35px 0;
+  border-top: 1px solid #4e4e4e;
+  border-bottom: 1px solid #4e4e4e;
+}
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.footer-address,
+.footer-menu_link {
+  font-family: "Proxima Nova", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    Helvetica, "Helvetica Neue", sans-serif;
+}
+.footer-contacts {
+  flex-wrap: wrap;
+  color: #fff;
+  text-decoration: none;
+}
+.footer-address {
+  line-height: 1.84;
+  color: #9b9b9b;
+}
+.footer-social {
+  display: inline-block;
+}
+.footer-social:not(:last-child) {
+  margin-right: 20px;
+}
+.footer-social svg {
+  transition: fill 0.3s linear;
+}
+.mail {
+  margin: 0 auto;
+}
+.flex-menu {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-left: 0;
+}
+.footer-menu_link {
+  color: #fff;
+  text-decoration: none;
+}
+.copywright,
+.footer-text {
+  color: #9b9b9b;
+  font-family: "Proxima Nova", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    Helvetica, "Helvetica Neue", sans-serif;
+}
+.footer-service-menu .footer-menu_link {
+  font-weight: 700;
+  font-size: 14px;
+}
+.copywright {
+  display: block;
+  font-weight: 700;
+}
+.footer-column.right-side {
+  flex-direction: column;
+  overflow: hidden;
+}
+.form-wrap {
+  margin-bottom: 7.29167vw;
+  padding-right: 8.33333vw;
+  padding-left: 3.64583vw;
+}
+.form-input ~ .g-recaptcha,
+.form-name,
+.form-tel {
+  margin-bottom: 70px;
+}
+.footer-text {
+  font-size: 1.56em;
+}
+form {
+  font-family: "Proxima Nova", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    Helvetica, "Helvetica Neue", sans-serif;
+}
+.form-label {
+  display: block;
+  color: #8a8a8a;
+}
+.form-input {
+  width: 100%;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  font-weight: 700;
+  font-size: 25px;
+  border: 0;
+  border-bottom: 1px solid #8a8a8a;
+  transition: 0.3s;
+}
+.form-input:focus {
+  border-color: #d29450;
+  outline: 0;
+}
+.form-input:invalid {
+  box-shadow: 0 0;
+}
+.form-name {
+  display: block;
+  color: #d29450;
+  border-bottom: 1px solid #8a8a8a;
+}
+.form-tel {
+  color: #4e4e4e;
+}
+.form-submit {
+  position: relative;
+  min-width: 295px;
+}
+.fixed,
+.to-top {
+  position: fixed;
+}
+.form-submit:hover {
+  color: #d29450;
+}
+.company-branches {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+  padding: 40px 8.33333vw 40px 3.64583vw;
+  background-color: #2d2d2d;
+  border-top: 3px solid rgba(255, 255, 255, 0.1);
+}
+.company-branches:before {
+  content: 'Группа компаний "ALEX GROUP"';
+  flex-grow: 1;
+  flex-basis: 100%;
+  margin-bottom: 25px;
+  font-size: 1.45833vw;
+  color: #fff;
+  letter-spacing: 2px;
+}
+.branch {
+  opacity: 0.3;
+}
+.branch_logo {
+  display: block;
+  width: 70px;
+  max-height: 50px;
+  fill: #000;
+}
+.fixed-icons {
+  right: 35px;
+  bottom: 140px;
+  z-index: 2;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.to-top {
+  bottom: 180px;
+  z-index: 10;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 284.935 284.936'%3E%3Cpath fill='white' d='M110.488 142.468L222.694 30.264c1.902-1.903 2.854-4.093 2.854-6.567s-.951-4.664-2.854-6.563L208.417 2.857C206.513.955 204.324 0 201.856 0c-2.475 0-4.664.955-6.567 2.857L62.24 135.9c-1.903 1.903-2.852 4.093-2.852 6.567 0 2.475.949 4.664 2.852 6.567l133.042 133.043c1.906 1.906 4.097 2.857 6.571 2.857 2.471 0 4.66-.951 6.563-2.857l14.277-14.267c1.902-1.903 2.851-4.094 2.851-6.57 0-2.472-.948-4.661-2.851-6.564L110.488 142.468z'/%3E%3C/svg%3E")
+    center/50% no-repeat;
+  border: 1px solid #fff;
+  transform: rotate(90deg);
+  filter: contrast(0.4);
+}
+.call-us-icon {
+  transition: fill 0.3s;
+}
+.call-us {
+  bottom: 110px;
+  z-index: 10;
+}
+@media screen and (min-width: 577px) {
+  .footer-address {
+    font-size: 1.1em;
+  }
+  .footer-menu-item:not(:last-child) {
+    margin-right: 25px;
+    margin-bottom: 15px;
+  }
+  .footer-menu {
+    margin-top: auto;
+    margin-bottom: 4.6875vw;
+  }
+  .footer-text {
+    margin-bottom: 3.75vw;
+  }
+  .branch:not(:last-child) {
+    margin-right: 3.64583vw;
+  }
+}
+@media screen and (min-width: 769px) {
+  .form-label {
+    font-size: 21px;
+  }
+}
+@media screen and (min-width: 993px) {
+  .contacts {
+    font-size: 2.1875vw;
+  }
+}
+@media screen and (min-width: 1101px) {
+  .sticky {
+    position: sticky;
+    top: calc(100vh - 650px);
+  }
+}
+@media screen and (max-width: 1280px) {
+  .octopus-link {
+    right: 3.38vw;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .logo-fixed {
+    margin-right: auto;
+  }
+  .site-footer {
+    flex-wrap: wrap-reverse;
+  }
+  .footer-column {
+    flex-basis: 100%;
+  }
+  .footer-column.left-side {
+    background-position-y: 30%;
+  }
+  .sticky {
+    margin-bottom: 4.6875vw;
+  }
+}
+@media screen and (max-width: 992px) {
+  .footer-heading {
+    font-size: 2em;
+  }
+  .contacts {
+    font-size: 25px;
+  }
+  .form-wrap {
+    margin-bottom: 40px;
+  }
+  .company-branches:before {
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .form-label {
+    font-size: 1.3em;
+  }
+  .company-branches {
+    justify-content: center;
+    padding: 40px 3.125vw 42px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .octopus-link {
+    right: 0;
+  }
+  .contacts {
+    flex-direction: column;
+  }
+  .footer-address {
+    font-size: 1em;
+  }
+  .mail {
+    margin: 20px 0;
+  }
+  .flex-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-menu-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .footer-menu {
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+  .copywright {
+    max-width: 60%;
+  }
+  .footer-text {
+    margin-bottom: 25px;
+    font-size: 1.3em;
+  }
+  .form-submit {
+    display: block;
+    width: 100%;
+  }
+  .branch {
+    flex-grow: 1;
+  }
+  .fixed-icons {
+    right: 18px;
+  }
+}
+/*! CSS Used from: https://alextech.uz/css/main.min.css */
+.golden {
+  text-transform: uppercase;
+}
+.golden,
+a:focus,
+a:hover {
+  color: #d29450;
+}
+.company-branches,
+.flex-menu {
+  list-style-type: none;
+}
+.fixed-icons {
+  visibility: hidden;
+}
+.call-us:hover .call-us-icon,
+.footer-social:focus svg,
+.footer-social:hover svg,
+.octopus-link:hover svg {
+  fill: #d29450;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+main {
+  display: block;
+}
+h1 {
+  margin: 0.67em 0;
+  font-size: 2em;
+}
+a {
+  background-color: transparent;
+}
+button,
+input,
+textarea {
+  margin: 0;
+  font-size: 100%;
+  line-height: 1.15;
+  font-family: inherit;
+}
+button,
+input {
+  overflow: visible;
+}
+button {
+  text-transform: none;
+}
+[type="button"],
+[type="submit"],
+button {
+  -webkit-appearance: button;
+}
+textarea {
+  overflow: auto;
+}
+p {
+  font-family: "Proxima Nova", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    Helvetica, "Helvetica Neue", sans-serif;
+}
+section {
+  position: relative;
+}
+a:focus,
+a:hover {
+  transition: 0.3s;
+}
+p {
+  font-size: 1.01em;
+}
+.golden.bold {
+  font-weight: 700;
+  font-family: "Bebas Neue", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    Helvetica, "Helvetica Neue", sans-serif;
+}
+.percentage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 12;
+  height: 3px;
+  background-color: #d29450;
+}
+.percentage::before {
+  content: "";
+  display: block;
+  width: 100%;
+}
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+.form-submit:not(.error) {
+  cursor: pointer;
+}
+.octopus-link {
+  position: absolute;
+  top: 120px;
+  right: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+}
+.octopus-link svg {
+  width: 60%;
+  height: 60%;
+  transition: 0.3s;
+  fill: #fff;
+}
+.audit-heading {
+  display: block;
+  font-size: 2em;
+  font-family: BebasNeueBook, Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    Helvetica, "Helvetica Neue", sans-serif;
+  color: #fff;
+}
+.bold {
+  font-weight: 700;
+}
+.company-branches:before,
+.contacts {
+  font-family: "Bebas Neue", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    Helvetica, "Helvetica Neue", sans-serif;
+}
+.site-footer {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  background: linear-gradient(135deg, #2d2d2d 0, #3d3d3d 100%) #3d3d3d;
+}
+.footer-column {
+  flex-basis: 50%;
+  padding-top: 8.33333vw;
+}
+.footer-column.left-side {
+  display: flex;
+  background: url(https://alextech.uz/img/printer-repair-and-s.jpg) 0 0 / cover
+    no-repeat;
+}
+.form-input,
+.form-submit,
+.form-submit:hover {
+  background-color: transparent;
+}
+.left-side-wrap {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  padding-bottom: 40px;
+}
+.footer-heading {
+  margin-top: 0;
+  font-size: 2.55208vw;
+}
+.copywright,
+.footer-menu_link {
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.contacts-wrap {
+  padding: 35px 0;
+  border-top: 1px solid #4e4e4e;
+  border-bottom: 1px solid #4e4e4e;
+}
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.footer-address,
+.footer-menu_link {
+  font-family: "Proxima Nova", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    Helvetica, "Helvetica Neue", sans-serif;
+}
+.footer-contacts {
+  flex-wrap: wrap;
+  color: #fff;
+  text-decoration: none;
+}
+.footer-address {
+  line-height: 1.84;
+  color: #9b9b9b;
+}
+.footer-social {
+  display: inline-block;
+}
+.footer-social:not(:last-child) {
+  margin-right: 20px;
+}
+.footer-social svg {
+  transition: fill 0.3s linear;
+}
+.mail {
+  margin: 0 auto;
+}
+.flex-menu {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-left: 0;
+}
+.footer-menu_link {
+  color: #fff;
+  text-decoration: none;
+}
+.copywright,
+.footer-text {
+  color: #9b9b9b;
+  font-family: "Proxima Nova", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    Helvetica, "Helvetica Neue", sans-serif;
+}
+.footer-service-menu .footer-menu_link {
+  font-weight: 700;
+  font-size: 14px;
+}
+.copywright {
+  display: block;
+  font-weight: 700;
+}
+.footer-column.right-side {
+  flex-direction: column;
+  overflow: hidden;
+}
+.form-wrap {
+  margin-bottom: 7.29167vw;
+  padding-right: 8.33333vw;
+  padding-left: 3.64583vw;
+}
+.form-input ~ .g-recaptcha,
+.form-name,
+.form-tel {
+  margin-bottom: 70px;
+}
+.footer-text {
+  font-size: 1.56em;
+}
+form {
+  font-family: "Proxima Nova", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    Helvetica, "Helvetica Neue", sans-serif;
+}
+.form-label {
+  display: block;
+  color: #8a8a8a;
+}
+.form-input {
+  width: 100%;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  font-weight: 700;
+  font-size: 25px;
+  border: 0;
+  border-bottom: 1px solid #8a8a8a;
+  transition: 0.3s;
+}
+.form-input:focus {
+  border-color: #d29450;
+  outline: 0;
+}
+.form-input:invalid {
+  box-shadow: 0 0;
+}
+.form-name {
+  display: block;
+  color: #d29450;
+  border-bottom: 1px solid #8a8a8a;
+}
+.form-tel {
+  color: #4e4e4e;
+}
+.form-submit {
+  position: relative;
+  min-width: 295px;
+}
+.fixed,
+.to-top {
+  position: fixed;
+}
+.form-submit:hover {
+  color: #d29450;
+}
+.company-branches {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+  padding: 40px 8.33333vw 40px 3.64583vw;
+  background-color: #2d2d2d;
+  border-top: 3px solid rgba(255, 255, 255, 0.1);
+}
+.company-branches:before {
+  content: 'Группа компаний "ALEX GROUP"';
+  flex-grow: 1;
+  flex-basis: 100%;
+  margin-bottom: 25px;
+  font-size: 1.45833vw;
+  color: #fff;
+  letter-spacing: 2px;
+}
+.branch {
+  opacity: 0.3;
+}
+.branch_logo {
+  display: block;
+  width: 70px;
+  max-height: 50px;
+  fill: #000;
+}
+.fixed-icons {
+  right: 35px;
+  bottom: 140px;
+  z-index: 2;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.to-top {
+  bottom: 180px;
+  z-index: 10;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 284.935 284.936'%3E%3Cpath fill='white' d='M110.488 142.468L222.694 30.264c1.902-1.903 2.854-4.093 2.854-6.567s-.951-4.664-2.854-6.563L208.417 2.857C206.513.955 204.324 0 201.856 0c-2.475 0-4.664.955-6.567 2.857L62.24 135.9c-1.903 1.903-2.852 4.093-2.852 6.567 0 2.475.949 4.664 2.852 6.567l133.042 133.043c1.906 1.906 4.097 2.857 6.571 2.857 2.471 0 4.66-.951 6.563-2.857l14.277-14.267c1.902-1.903 2.851-4.094 2.851-6.57 0-2.472-.948-4.661-2.851-6.564L110.488 142.468z'/%3E%3C/svg%3E")
+    center/50% no-repeat;
+  border: 1px solid #fff;
+  transform: rotate(90deg);
+  filter: contrast(0.4);
+}
+.call-us-icon {
+  transition: fill 0.3s;
+}
+.call-us {
+  bottom: 110px;
+  z-index: 10;
+}
+@media screen and (min-width: 577px) {
+  .footer-address {
+    font-size: 1.1em;
+  }
+  .footer-menu-item:not(:last-child) {
+    margin-right: 25px;
+    margin-bottom: 15px;
+  }
+  .footer-menu {
+    margin-top: auto;
+    margin-bottom: 4.6875vw;
+  }
+  .footer-text {
+    margin-bottom: 3.75vw;
+  }
+  .branch:not(:last-child) {
+    margin-right: 3.64583vw;
+  }
+}
+@media screen and (min-width: 769px) {
+  .form-label {
+    font-size: 21px;
+  }
+}
+@media screen and (min-width: 993px) {
+  .contacts {
+    font-size: 2.1875vw;
+  }
+}
+@media screen and (min-width: 1101px) {
+  .sticky {
+    position: sticky;
+    top: calc(100vh - 650px);
+  }
+}
+@media screen and (max-width: 1280px) {
+  .octopus-link {
+    right: 3.38vw;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .logo-fixed {
+    margin-right: auto;
+  }
+  .site-footer {
+    flex-wrap: wrap-reverse;
+  }
+  .footer-column {
+    flex-basis: 100%;
+  }
+  .footer-column.left-side {
+    background-position-y: 30%;
+  }
+  .sticky {
+    margin-bottom: 4.6875vw;
+  }
+}
+@media screen and (max-width: 992px) {
+  .footer-heading {
+    font-size: 2em;
+  }
+  .contacts {
+    font-size: 25px;
+  }
+  .form-wrap {
+    margin-bottom: 40px;
+  }
+  .company-branches:before {
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .form-label {
+    font-size: 1.3em;
+  }
+  .company-branches {
+    justify-content: center;
+    padding: 40px 3.125vw 42px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .octopus-link {
+    right: 0;
+  }
+  .contacts {
+    flex-direction: column;
+  }
+  .footer-address {
+    font-size: 1em;
+  }
+  .mail {
+    margin: 20px 0;
+  }
+  .flex-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-menu-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .footer-menu {
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+  .copywright {
+    max-width: 60%;
+  }
+  .footer-text {
+    margin-bottom: 25px;
+    font-size: 1.3em;
+  }
+  .form-submit {
+    display: block;
+    width: 100%;
+  }
+  .branch {
+    flex-grow: 1;
+  }
+  .fixed-icons {
+    right: 18px;
+  }
+}
+/*! CSS Used from: https://alextech.uz/css/page.min.css */
+.modal-close,
+.service-list_btn {
+  background-color: transparent;
+  cursor: pointer;
+}
+.service-intro_text,
+.service-intro_title,
+.text-decoration {
+  text-transform: uppercase;
+}
+.modal-close:focus,
+.service-list_btn:focus {
+  outline: 0;
+}
+.service-intro_text {
+  font-size: 14px;
+  font-family: "Proxima Nova", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    Helvetica, "Helvetica Neue", sans-serif;
+  color: #fff;
+  letter-spacing: 4px;
+}
+.service-advantages_heading .golden,
+.service-intro_title {
+  font-family: BebasNeueBook, Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    Helvetica, "Helvetica Neue", sans-serif;
+}
+.service-intro_title {
+  margin: 0.3em 0 0.5em;
+  font-size: 4.6875vw;
+  color: #d29450;
+  letter-spacing: 5px;
+}
+.service-intro_description {
+  font-size: 1rem;
+  line-height: 1.95;
+  font-family: "Proxima Nova", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    Helvetica, "Helvetica Neue", sans-serif;
+  color: #bebebe;
+  letter-spacing: 0.5px;
+}
+.service-advantages_heading,
+.service-list_item-heading,
+.text-decoration {
+  font-family: "Bebas Neue", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    Helvetica, "Helvetica Neue", sans-serif;
+  font-weight: 700;
+}
+.service-list_item-heading,
+.service-list_item-img {
+  transition: 0.4s;
+}
+.service-list {
+  margin: 5.98958vw 0;
+}
+.service-list_item:not(:last-child) {
+  margin-bottom: 25px;
+}
+.service-list_btn {
+  width: 100%;
+  padding: 15px 2.34375vw 25px;
+  text-align: center;
+  letter-spacing: 1px;
+  border: 0;
+}
+.service-list_btn:hover .service-list_item-img {
+  fill: #fff;
+}
+.service-list_btn:hover .service-list_item-heading {
+  color: #d29450;
+}
+.service-list_item {
+  flex-grow: 1;
+}
+.service-list_item-img {
+  margin: 0 auto 25px;
+}
+.service-list_item-heading {
+  display: block;
+  margin: 0 auto;
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  word-break: keep-all;
+}
+.text-decoration {
+  position: absolute;
+  top: 70px;
+  left: -6.35417vw;
+  font-size: 13.02083vw;
+  color: rgba(255, 255, 255, 0.035);
+}
+.service-modal,
+.service-modal::before {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.service-advantages_heading {
+  font-size: 4.73958vw;
+  color: #fff;
+  text-transform: uppercase;
+}
+.advantage-list_item {
+  font-size: 1rem;
+  line-height: 1.56;
+  font-family: "Proxima Nova", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    Helvetica, "Helvetica Neue", sans-serif;
+  color: grey;
+}
+.advantage-list {
+  flex-wrap: wrap;
+  margin-top: 4.16667vw;
+  margin-bottom: 4.16667vw;
+  counter-reset: advantage;
+}
+.advantage-list_item {
+  padding-right: 7.8125vw;
+}
+.advantage-list_item::before {
+  font-family: "Bebas Neue", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    Helvetica, "Helvetica Neue", sans-serif;
+}
+.advantage-list_item-row {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  margin-bottom: 35px;
+}
+.advantage-list_item-row::before {
+  display: inline-block;
+  margin-right: 25px;
+}
+.advantage-list_item:not(.advantage-list_item-row) {
+  margin-top: 3.125vw;
+  margin-bottom: 3.125vw;
+}
+.advantage-list_item:not(.advantage-list_item-row)::before {
+  display: block;
+  margin-bottom: 1.30208vw;
+}
+.advantage-list_item::before {
+  content: "0" counter(advantage) "";
+  font-weight: 700;
+  font-size: 45px;
+  color: #fff;
+  counter-increment: advantage;
+}
+.m-30 {
+  margin-bottom: 30px;
+}
+.links-wrap {
+  margin-top: 30px;
+}
+.service-modal {
+  left: 0;
+  z-index: 9;
+  display: none;
+}
+.service-modal .main-content {
+  color: #fff;
+}
+.modal-close {
+  color: #d29450;
+}
+.service-modal::before {
+  content: "";
+  left: 0;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  display: flex;
+  height: 100%;
+}
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  z-index: 10;
+  font-weight: 700;
+  font-size: 2.9rem;
+  border: 0;
+  opacity: 0;
+  transition: opacity 0.4s 0.4s, transform 0.2s;
+}
+.main-content {
+  width: 100%;
+  height: 100vh;
+  padding: 60px 8.33333vw 60px 3.64583vw;
+  overflow: auto;
+  background: linear-gradient(135deg, #2d2d2d 0, #3d3d3d 100%) #3d3d3d;
+  transform: translate(4000px);
+  transition: transform 0.4s 0.2s;
+}
+@media screen and (min-width: 769px) {
+  .service-list_item:not(:last-child) {
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  .advantage-list_item:not(.advantage-list_item-row) {
+    flex-basis: 50%;
+  }
+}
+@media screen and (min-width: 993px) {
+  .servise-img {
+    width: 50%;
+    background-image: url(https://alextech.uz/img/printer-repair-and-s.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transform: translateX(-4000px);
+    transition: transform 0.4s 0.2s;
+  }
+  .main-content {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1101px) {
+  .service-list_item-heading {
+    font-size: 1.04167vw;
+  }
+}
+@media screen and (min-width: 1501px) {
+  .links-wrap {
+    position: fixed;
+    top: 25%;
+    right: 3.38vw;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 992px) {
+  .service-advantages_heading,
+  .service-intro_title {
+    font-size: 2.9em;
+  }
+  .service-list {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 768px) {
+  .text-decoration {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .service-list_item {
+    flex-basis: 100%;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .service-list_item {
+    flex-basis: 50%;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 1500px) {
+  .m-30 {
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
+  .links-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+/*! CSS Used from: Embedded */
+.btn-link,
+.site-header {
+  font-family: "Proxima Nova", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    Helvetica, "Helvetica Neue", sans-serif;
+}
+.btn-link,
+.menu-trigger {
+  background-color: transparent;
+  cursor: pointer;
+}
+.hamburger-inner::after,
+.hamburger-inner::before,
+.menu-trigger:not(.active):focus .hamburger-inner::after,
+.menu-trigger:not(.active):focus .hamburger-inner::before,
+.menu-trigger:not(.active):hover .hamburger-inner::after,
+.menu-trigger:not(.active):hover .hamburger-inner::before {
+  transition: 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.btn-link,
+.menu-item_link {
+  text-transform: uppercase;
+}
+.menu-trigger:focus {
+  outline: 0;
+}
+body {
+  margin: 0;
+}
+.btn-link {
+  padding: 0.83vw 1.45vw;
+  text-align: center;
+  color: #d29450;
+  text-decoration: none;
+  border: 1px solid #d29450;
+  transition: color 0.2s ease-in, color 0.2s ease-in;
+}
+.btn-link:hover {
+  color: #fff;
+  background-color: #d29450;
+}
+.site-header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9;
+  padding: 3vh 3.38vw;
+  font-size: 0.875rem;
+}
+.menu-item,
+.menu-trigger {
+  position: relative;
+}
+.contact-us_tel {
+  font-family: "Bebas Neue", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    Helvetica, "Helvetica Neue", sans-serif;
+}
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  max-width: 1px;
+  max-height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+}
+.header-menu {
+  display: flex;
+  align-items: center;
+}
+.menu-list {
+  display: flex;
+  margin-top: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+.service-menu .menu-item:not(:first-child)::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -3.5px;
+  width: 7px;
+  height: 7px;
+  background-color: #d29450;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+.menu-item_link {
+  display: inline-block;
+  padding: 0 1.43em;
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 1.15;
+  vertical-align: middle;
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  transition: color 0.4s;
+}
+.menu-item_link:focus,
+.menu-item_link:hover {
+  color: #d29450;
+}
+.service-menu {
+  margin-right: auto;
+  margin-left: auto;
+}
+.contact-us {
+  display: flex;
+  align-items: flex-start;
+  font-size: 1.5625vw;
+}
+.main-menu_wrap,
+.menu-wrap {
+  flex-direction: column;
+  display: flex;
+}
+.contact-us_item {
+  margin-right: 1em;
+  line-height: 1;
+  text-decoration: none;
+}
+.contact-us_tel {
+  font-weight: 700;
+  color: #fff;
+}
+.contact-us_tel--mobile {
+  display: none;
+}
+.menu-trigger {
+  width: 24px;
+  height: 17px;
+  padding: 0;
+  border: none;
+  transition: background-color 0.25s cubic-bezier(0.615, 0.19, 0.305, 0.91);
+}
+.menu-trigger:focus .hamburger-inner,
+.menu-trigger:focus .hamburger-inner::after,
+.menu-trigger:focus .hamburger-inner::before {
+  background-color: #d29450;
+}
+.menu-trigger.inner {
+  z-index: 5;
+}
+.hamburger-inner,
+.hamburger-inner::after,
+.hamburger-inner::before {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 3px;
+  background-color: #d29450;
+}
+.main-menu_wrap,
+.transition-layer {
+  position: fixed;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  overflow: hidden;
+  top: 0;
+  visibility: hidden;
+}
+.hamburger-inner {
+  top: 0;
+  left: 0;
+  transition: 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.hamburger-inner::after,
+.hamburger-inner::before {
+  content: "";
+  right: 0;
+  display: block;
+}
+.hamburger-inner::before {
+  top: 6px;
+}
+.hamburger-inner::after {
+  top: 12px;
+  bottom: 0;
+}
+.menu-trigger:not(.active):focus .hamburger-inner::before,
+.menu-trigger:not(.active):hover .hamburger-inner::before {
+  transform: scaleX(0.6);
+}
+.main-menu_wrap {
+  z-index: 15;
+  height: 100%;
+  padding: 3vh 3.38vw 45px;
+  text-align: center;
+  background-size: cover;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+.menu-logo-wrap {
+  display: flex;
+  align-items: center;
+}
+.menu-wrap {
+  align-items: center;
+  margin: auto 0;
+}
+.menu-social-wrap {
+  align-self: flex-start;
+}
+.transition-layer {
+  z-index: 13;
+  height: 100%;
+}
+.transition-layer .bg-layer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2500%;
+  height: 100%;
+  background: url(https://alextech.uz/img/ink.png) 0 0/100% 100% no-repeat;
+  transform: translateY(-50%);
+}
+.mobile-service-menu {
+  display: none;
+  margin-bottom: 20px;
+}
+.left-side,
+.right-side {
+  display: flex;
+}
+.main-menu {
+  flex-direction: column;
+}
+.main-menu .menu-item::after,
+.main-menu .menu-item::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 7px;
+  height: 7px;
+  background-color: #d29450;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.6s;
+}
+.main-menu .menu-item::before {
+  left: -3.5px;
+}
+.main-menu .menu-item::after {
+  right: -3.5px;
+}
+.main-menu .menu-item:hover::after,
+.main-menu .menu-item:hover::before {
+  opacity: 1;
+}
+.main-menu .menu-item {
+  margin-bottom: 1rem;
+}
+.main-menu .menu-item_link {
+  display: block;
+  font-size: 1.3em;
+}
+/*! CSS Used from: Embedded */
+.content-wrap {
+  position: relative;
+  max-width: 1200px;
+  margin-left: 3.17708vw;
+  padding: 0 3.17708vw 10.41667vw;
+}
+.paged {
+  background-image: linear-gradient(135deg, #2d2d2d 5%, #373737 95%);
+}
+.page-main {
+  position: relative;
+  display: flex;
+  padding-top: 10.9375vw;
+}
+@media screen and (max-width: 1100px) {
+  .page-main {
+    padding-top: 130px;
+  }
+}
+/*! CSS Used from: Embedded */
+@media screen and (min-width: 1101px) {
+  .service-menu {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .logo {
+    margin-right: auto;
+  }
+  .service-menu {
+    display: none;
+    margin-bottom: 15px;
+  }
+  .mobile-service-menu {
+    display: flex;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .service-menu .menu-item_link {
+    font-size: 0.9em;
+  }
+  .contact-us {
+    font-size: 2.6em;
+  }
+}
+@media screen and (max-width: 992px) {
+  .btn-link {
+    padding: 1em 1.5em;
+  }
+}
+@media screen and (max-width: 576px) {
+  .btn-link {
+    display: block;
+  }
+  .logo_img {
+    width: 99px;
+    height: 69px;
+  }
+  .contact-us {
+    flex-direction: column;
+    font-size: 1.6em;
+  }
+  .contact-us_item {
+    line-height: 1.4;
+  }
+}
+/*! CSS Used keyframes */
+@-webkit-keyframes fadeInLeft {
+  from {
+    transform: translate3d(-100%, 0, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+@keyframes fadeInLeft {
+  from {
+    transform: translate3d(-100%, 0, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeInLeft {
+  from {
+    transform: translate3d(-100%, 0, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+@keyframes fadeInLeft {
+  from {
+    transform: translate3d(-100%, 0, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*! CSS Used fontfaces */
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Proxima Nova";
+  font-display: swap;
+  src: local("Proxima Nova Bold"), local("ProximaNova-Bold"),
+    url(https://alextech.uz/fonts/ProximaNova-Bold.woff2) format("woff2"),
+    url(https://alextech.uz/fonts/ProximaNova-Bold.woff) format("woff");
+}
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Proxima Nova";
+  font-display: swap;
+  src: local("Proxima Nova Regular"), local("ProximaNova-Regular"),
+    url(https://alextech.uz/fonts/ProximaNova-Regular.woff2) format("woff2"),
+    url(https://alextech.uz/fonts/ProximaNova-Regular.woff) format("woff");
+}
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Proxima Nova";
+  font-display: swap;
+  src: local("Proxima Nova Bold"), local("ProximaNova-Bold"),
+    url(https://alextech.uz/fonts/ProximaNova-Bold.woff2) format("woff2"),
+    url(https://alextech.uz/fonts/ProximaNova-Bold.woff) format("woff");
+}
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Proxima Nova";
+  font-display: swap;
+  src: local("Proxima Nova Regular"), local("ProximaNova-Regular"),
+    url(https://alextech.uz/fonts/ProximaNova-Regular.woff2) format("woff2"),
+    url(https://alextech.uz/fonts/ProximaNova-Regular.woff) format("woff");
+}
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Bebas Neue";
+  font-display: swap;
+  src: local("BebasNeueBold"),
+    url(https://alextech.uz/fonts/BebasNeueBold.woff2) format("woff2"),
+    url(https://alextech.uz/fonts/BebasNeueBold.woff) format("woff");
+}
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Bebas Neue";
+  font-display: swap;
+  src: local("BebasNeueBold"),
+    url(https://alextech.uz/fonts/BebasNeueBold.woff2) format("woff2"),
+    url(https://alextech.uz/fonts/BebasNeueBold.woff) format("woff");
+}
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: BebasNeueBook;
+  font-display: swap;
+  src: local("BebasNeueBook"),
+    url(https://alextech.uz/fonts/BebasNeueBook.woff2) format("woff2"),
+    url(https://alextech.uz/fonts/BebasNeueBook.woff) format("woff");
+}
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: BebasNeueBook;
+  font-display: swap;
+  src: local("BebasNeueBook"),
+    url(https://alextech.uz/fonts/BebasNeueBook.woff2) format("woff2"),
+    url(https://alextech.uz/fonts/BebasNeueBook.woff) format("woff");
+}
