@@ -6,14 +6,13 @@ const Footer: FC = () => {
     const [name, setName] = useState<string>('');
     const [phone, setPhone] = useState<string>('');
 
-    const onSubmit = (e: any) => {
-        e.preventDefault();
+    const onSubmit = () => {
 
         if (name == '' || phone == '') {
             alert("Заполните все поля")
         }
 
-        axios.post("http://localhost:3004/create",
+        axios.post("backend-itkey.ikcrm.uz/create",
             {
                 name: name,
                 phone: phone,
