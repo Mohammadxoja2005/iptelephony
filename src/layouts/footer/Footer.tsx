@@ -1,4 +1,6 @@
 import { FC } from 'react'
+// axios
+// import axios from 'axios'
 
 const Footer: FC = () => {
     return (
