@@ -9,14 +9,14 @@ const Footer: FC = () => {
                         <h2 className="golden bold footer-heading">контакты</h2>
                         <div className="contacts-wrap">
                             <div className="contacts">
-                                <a className="footer-contacts service" href="tel:+998712021199">
-                                    (+998-71) 202 11 99
+                                <a className="footer-contacts service" href="tel:+998996098639">
+                                    (+998-99) 609 86 39
                                 </a>
                                 <a
                                     className="footer-contacts mail service"
                                     href="mailto:info@alextech.uz"
                                 >
-                                    info@alextech.uz
+                                    itkeyuzb@gmail.com
                                 </a>
                                 <div className="social-wrap">
                                     <a
@@ -58,12 +58,12 @@ const Footer: FC = () => {
                                 </div>
                             </div>
                             <div className="contacts">
-                                <a className="footer-contacts service" href="tel:+998903703396">
-                                    (+998-90) 370 33 96
+                                <a className="footer-contacts service" href="tel:+998977773419">
+                                    (+998-97) 777 34 19
                                 </a>
                             </div>
                             <span className="footer-address">
-                                г. Ташкент, Юнусабадский район, пр-т Амира Темура, д. 129А
+                                г. Ташкент, Юнусабадский район, Массив Кашгар 12
                             </span>
                         </div>
                     </div>
@@ -102,11 +102,11 @@ const Footer: FC = () => {
                                     IT-аутсорсинг
                                 </a>
                             </li> */}
-                            <li className="footer-menu-item">
+                            {/* <li className="footer-menu-item">
                                 <a className="footer-menu_link" href="/">
                                     сети
                                 </a>
-                            </li>
+                            </li> */}
                             <li className="footer-menu-item">
                                 <a className="footer-menu_link" href="/">
                                     amoCRM
@@ -225,7 +225,7 @@ const Footer: FC = () => {
                         </button>
                     </form>
                 </div>
-                <ul className="company-branches">
+                {/* <ul className="company-branches">
                     <li className="branch">
                         <a
                             className="logo"
@@ -280,7 +280,7 @@ const Footer: FC = () => {
                             </svg>
                         </a>
                     </li>
-                </ul>
+                </ul> */}
             </div>
         </footer>
     )

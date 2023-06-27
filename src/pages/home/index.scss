@@ -49,13 +49,16 @@ body {
   background-color: #d29450;
 }
 .site-header {
-  position: absolute;
+  position: sticky;
   top: 0;
-  right: 0;
-  left: 0;
-  z-index: 9;
+  // position: absolute;
+  // top: 0;
+  // right: 0;
+  // left: 0;
+  // z-index: 9;
   padding: 3vh 3.38vw;
-  font-size: 0.875rem;
+  font-size: 0.875rem; 
+  background: linear-gradient(135deg, #2d2d2d 5%, #373737 95%);
 }
 .menu-item,
 .menu-trigger {
@@ -1579,13 +1582,14 @@ body {
   background-color: #d29450;
 }
 .site-header {
-  position: absolute;
+  position: sticky;
   top: 0;
-  right: 0;
-  left: 0;
+  // right: 0;
+  // left: 0;
   z-index: 9;
   padding: 3vh 3.38vw;
   font-size: 0.875rem;
+  background: linear-gradient(135deg, #2d2d2d 5%, #373737 95%);
 }
 .menu-item,
 .menu-trigger {
@@ -1941,76 +1945,76 @@ body {
   }
 }
 /*! CSS Used fontfaces */
-@font-face {
-  font-style: normal;
-  font-weight: 700;
-  font-family: "Proxima Nova";
-  font-display: swap;
-  src: local("Proxima Nova Bold"), local("ProximaNova-Bold"),
-    url(https://alextech.uz/fonts/ProximaNova-Bold.woff2) format("woff2"),
-    url(https://alextech.uz/fonts/ProximaNova-Bold.woff) format("woff");
-}
-@font-face {
-  font-style: normal;
-  font-weight: 400;
-  font-family: "Proxima Nova";
-  font-display: swap;
-  src: local("Proxima Nova Regular"), local("ProximaNova-Regular"),
-    url(https://alextech.uz/fonts/ProximaNova-Regular.woff2) format("woff2"),
-    url(https://alextech.uz/fonts/ProximaNova-Regular.woff) format("woff");
-}
-@font-face {
-  font-style: normal;
-  font-weight: 700;
-  font-family: "Proxima Nova";
-  font-display: swap;
-  src: local("Proxima Nova Bold"), local("ProximaNova-Bold"),
-    url(https://alextech.uz/fonts/ProximaNova-Bold.woff2) format("woff2"),
-    url(https://alextech.uz/fonts/ProximaNova-Bold.woff) format("woff");
-}
-@font-face {
-  font-style: normal;
-  font-weight: 400;
-  font-family: "Proxima Nova";
-  font-display: swap;
-  src: local("Proxima Nova Regular"), local("ProximaNova-Regular"),
-    url(https://alextech.uz/fonts/ProximaNova-Regular.woff2) format("woff2"),
-    url(https://alextech.uz/fonts/ProximaNova-Regular.woff) format("woff");
-}
-@font-face {
-  font-style: normal;
-  font-weight: 700;
-  font-family: "Bebas Neue";
-  font-display: swap;
-  src: local("BebasNeueBold"),
-    url(https://alextech.uz/fonts/BebasNeueBold.woff2) format("woff2"),
-    url(https://alextech.uz/fonts/BebasNeueBold.woff) format("woff");
-}
-@font-face {
-  font-style: normal;
-  font-weight: 700;
-  font-family: "Bebas Neue";
-  font-display: swap;
-  src: local("BebasNeueBold"),
-    url(https://alextech.uz/fonts/BebasNeueBold.woff2) format("woff2"),
-    url(https://alextech.uz/fonts/BebasNeueBold.woff) format("woff");
-}
-@font-face {
-  font-style: normal;
-  font-weight: 400;
-  font-family: BebasNeueBook;
-  font-display: swap;
-  src: local("BebasNeueBook"),
-    url(https://alextech.uz/fonts/BebasNeueBook.woff2) format("woff2"),
-    url(https://alextech.uz/fonts/BebasNeueBook.woff) format("woff");
-}
+// @font-face {
+//   font-style: normal;
+//   font-weight: 700;
+//   font-family: "Proxima Nova";
+//   font-display: swap;
+//   src: local("Proxima Nova Bold"), local("ProximaNova-Bold"),
+//     url(https://alextech.uz/fonts/ProximaNova-Bold.woff2) format("woff2"),
+//     url(https://alextech.uz/fonts/ProximaNova-Bold.woff) format("woff");
+// }
+// @font-face {
+//   font-style: normal;
+//   font-weight: 400;
+//   font-family: "Proxima Nova";
+//   font-display: swap;
+//   src: local("Proxima Nova Regular"), local("ProximaNova-Regular"),
+//     url(https://alextech.uz/fonts/ProximaNova-Regular.woff2) format("woff2"),
+//     url(https://alextech.uz/fonts/ProximaNova-Regular.woff) format("woff");
+// }
+// @font-face {
+//   font-style: normal;
+//   font-weight: 700;
+//   font-family: "Proxima Nova";
+//   font-display: swap;
+//   src: local("Proxima Nova Bold"), local("ProximaNova-Bold"),
+//     url(https://alextech.uz/fonts/ProximaNova-Bold.woff2) format("woff2"),
+//     url(https://alextech.uz/fonts/ProximaNova-Bold.woff) format("woff");
+// }
+// @font-face {
+//   font-style: normal;
+//   font-weight: 400;
+//   font-family: "Proxima Nova";
+//   font-display: swap;
+//   src: local("Proxima Nova Regular"), local("ProximaNova-Regular"),
+//     url(https://alextech.uz/fonts/ProximaNova-Regular.woff2) format("woff2"),
+//     url(https://alextech.uz/fonts/ProximaNova-Regular.woff) format("woff");
+// }
+// @font-face {
+//   font-style: normal;
+//   font-weight: 700;
+//   font-family: "Bebas Neue";
+//   font-display: swap;
+//   src: local("BebasNeueBold"),
+//     url(https://alextech.uz/fonts/BebasNeueBold.woff2) format("woff2"),
+//     url(https://alextech.uz/fonts/BebasNeueBold.woff) format("woff");
+// }
+// @font-face {
+//   font-style: normal;
+//   font-weight: 700;
+//   font-family: "Bebas Neue";
+//   font-display: swap;
+//   src: local("BebasNeueBold"),
+//     url(https://alextech.uz/fonts/BebasNeueBold.woff2) format("woff2"),
+//     url(https://alextech.uz/fonts/BebasNeueBold.woff) format("woff");
+// }
+// @font-face {
+//   font-style: normal;
+//   font-weight: 400;
+//   font-family: BebasNeueBook;
+//   font-display: swap;
+//   src: local("BebasNeueBook"),
+//     url(https://alextech.uz/fonts/BebasNeueBook.woff2) format("woff2"),
+//     url(https://alextech.uz/fonts/BebasNeueBook.woff) format("woff");
+// }
 
-@font-face {
-  font-style: normal;
-  font-weight: 400;
-  font-family: BebasNeueBook;
-  font-display: swap;
-  src: local("BebasNeueBook"),
-    url(https://alextech.uz/fonts/BebasNeueBook.woff2) format("woff2"),
-    url(https://alextech.uz/fonts/BebasNeueBook.woff) format("woff");
-}
+// @font-face {
+//   font-style: normal;
+//   font-weight: 400;
+//   font-family: BebasNeueBook;
+//   font-display: swap;
+//   src: local("BebasNeueBook"),
+//     url(https://alextech.uz/fonts/BebasNeueBook.woff2) format("woff2"),
+//     url(https://alextech.uz/fonts/BebasNeueBook.woff) format("woff");
+// }

@@ -33,7 +33,7 @@ const Header: FC = () => {
                         </AnchorLink>
                     </li>
                     <li className="menu-item">
-                        <AnchorLink className="menu-item_link" href="#message">
+                        <AnchorLink className="menu-item_link" href="#site-footer">
                             оставить заявку
                         </AnchorLink>
                     </li>
@@ -51,15 +51,15 @@ const Header: FC = () => {
                 <div className="contact-us">
                     <a
                         className="contact-us_tel contact-us_item service"
-                        href="tel:+998712021199"
+                        href="tel:+998996098639"
                     >
-                        71 202 11 99
+                        99 609 86 39
                     </a>
                     <a
                         className="contact-us_tel contact-us_item service"
-                        href="tel:+998903703396"
+                        href="tel:+998977773419"
                     >
-                        90 370 33 96
+                        97 777 34 19
                     </a>
                     <a
                         className="contact-us_tel contact-us_tel--mobile service"

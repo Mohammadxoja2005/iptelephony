@@ -3,7 +3,7 @@ import { FC } from 'react'
 const Amocrm: FC = () => {
     return (
         <section
-            id='iptelephony'
+            id='amocrm'
             className="service-benefits wow fadeIn"
             data-wow-delay=".2s"
             data-wow-duration=".4s"

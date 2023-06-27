@@ -5,7 +5,7 @@ const Benefit: FC = () => {
         <section className="service-intro">
             <span className="service-intro_text">айти–решения в ташкенте</span>
             <h2 className="service-intro_title">
-                IP-телефония <br /> для вашего бизнеса
+                IP-телефония и amoCRM <br /> для вашего бизнеса
             </h2>
             <p className="service-intro_description">
                 Не знаете как организовать работу IP телефонии в Вашем офисе или
