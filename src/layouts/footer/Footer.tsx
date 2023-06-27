@@ -6,18 +6,21 @@ const Footer: FC = () => {
     const [name, setName] = useState<string>('');
     const [phone, setPhone] = useState<string>('');
 
-    const onSubmit = () => {
+    const onSubmit = (e: any) => {
+        e.preventDefault();
 
         if (name == '' || phone == '') {
             alert("Заполните все поля")
         }
 
-        axios.post("backend-itkey.ikcrm.uz/create",
+        axios.post("https://backend-itkey.ikcrm.uz/create",
             {
                 name: name,
                 phone: phone,
                 responsible_id: 9636770,
                 deal_name: "IP-телефония"
+            }).then((response) => {
+                console.log(response);
             })
     }
 
@@ -242,9 +245,9 @@ const Footer: FC = () => {
                             </div>
                             <iframe style={{ display: "none" }} />
                         </div> */}
-                        <button onClick={onSubmit} className="btn-link form-submit">
+                        <div onClick={(e) => onSubmit(e)} className="btn-link form-submit">
                             Записаться на бесплатный аудит
-                        </button>
+                        </div>
                     </form>
                 </div>
                 {/* <ul className="company-branches">
