@@ -69,7 +69,7 @@ const Footer: FC = () => {
                     </div>
                     <nav className="footer-menu">
                         <h2 className="visually-hidden">Меню сайта в футере</h2>
-                        <ul className="footer-main-menu flex-menu">
+                        {/* <ul className="footer-main-menu flex-menu">
                             <li className="footer-menu-item">
                                 <a className="footer-menu_link" href="/about.html">
                                     О компании
@@ -95,42 +95,42 @@ const Footer: FC = () => {
                                     Контакты
                                 </a>
                             </li>
-                        </ul>
+                        </ul> */}
                         <ul className="footer-service-menu flex-menu">
-                            <li className="footer-menu-item">
-                                <a className="footer-menu_link" href="/outsource.html">
+                            {/* <li className="footer-menu-item">
+                                <a className="footer-menu_link" href="/">
                                     IT-аутсорсинг
                                 </a>
-                            </li>
+                            </li> */}
                             <li className="footer-menu-item">
-                                <a className="footer-menu_link" href="/network.html">
+                                <a className="footer-menu_link" href="/">
                                     сети
                                 </a>
                             </li>
                             <li className="footer-menu-item">
-                                <a className="footer-menu_link" href="/crm.html">
-                                    CRM-системы
+                                <a className="footer-menu_link" href="/">
+                                    amoCRM
                                 </a>
                             </li>
                             <li className="footer-menu-item">
-                                <a className="footer-menu_link" href="/telephony.html">
+                                <a className="footer-menu_link" href="/">
                                     ip-телефония
                                 </a>
                             </li>
-                            <li className="footer-menu-item">
-                                <a className="footer-menu_link" href="/service.html">
+                            {/* <li className="footer-menu-item">
+                                <a className="footer-menu_link" href="/">
                                     обслуживание оргтехники
                                 </a>
-                            </li>
-                            <li className="footer-menu-item">
-                                <a className="footer-menu_link" href="/video.html">
+                            </li> */}
+                            {/* <li className="footer-menu-item">
+                                <a className="footer-menu_link" href="/">
                                     видеонаблюдение
                                 </a>
-                            </li>
+                            </li> */}
                         </ul>
                     </nav>
                     <span className="copywright">
-                        «Alex Technical», 2023. Все права защищены.
+                        «ITKEY», 2023. Все права защищены.
                     </span>
                 </div>
             </div>
