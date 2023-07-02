@@ -1394,6 +1394,8 @@ form {
   color: grey;
 }
 .advantage-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   flex-wrap: wrap;
   margin-top: 4.16667vw;
   margin-bottom: 4.16667vw;
@@ -1407,13 +1409,15 @@ form {
     Helvetica, "Helvetica Neue", sans-serif;
 }
 .advantage-list_item-row {
+  // display: grid;
+  // grid-template-columns: 1fr 1fr;
   display: flex;
   flex-basis: 100%;
   align-items: center;
   margin-bottom: 35px;
 }
 .advantage-list_item-row::before {
-  display: inline-block;
+  // display: inline-block;
   margin-right: 25px;
 }
 .advantage-list_item:not(.advantage-list_item-row) {

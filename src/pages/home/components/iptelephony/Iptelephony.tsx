@@ -27,7 +27,9 @@ const Iptelephony: FC = () => {
                 сотрудниками. Взаимодействие участников IP телефонии становится
                 гораздо эффективнее, если применять такие современные технологии, как:
             </p>
-            <ul className="menu-list advantage-list list-row">
+            {/* <ul className="menu-list advantage-list list-row"> */}
+            <ul className="advantage-list list-row">
+
                 <li className="advantage-list_item advantage-list_item-row ">
                     IVR интерактивное голосовое меню;
                 </li>
@@ -41,6 +43,7 @@ const Iptelephony: FC = () => {
                     переадресация звонков и многие другие.
                 </li>
             </ul>
+            {/* </ul> */}
             <p
                 className="service-intro_description"
                 style={{ marginBottom: "4.16667vw" }}

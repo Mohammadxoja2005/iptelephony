@@ -19,7 +19,8 @@ const Amocrm: FC = () => {
             <p className="service-intro_description">
                 Вторая проблема, которую amoCRM с большим успехом устраняет, связана с наладкой коммуникаций как между менеджерами и клиентами, так и между сотрудниками. Взаимодействие участников amoCRM становится гораздо эффективнее благодаря использованию современных технологий, таких как:
             </p>
-            <ul className="menu-list advantage-list list-row">
+            {/* <ul className="menu-list advantage-list list-row"> */}
+            <ul className="advantage-list list-row">
                 <li className="advantage-list_item advantage-list_item-row ">
                     Хранение в одном месте: Данные централизованно.
                 </li>
@@ -33,6 +34,7 @@ const Amocrm: FC = () => {
                     Автоматизация процессов: Уведомления, задачи, отчеты.
                 </li>
             </ul>
+            {/* </ul> */}
             <p
                 className="service-intro_description"
                 style={{ marginBottom: "4.16667vw" }}
