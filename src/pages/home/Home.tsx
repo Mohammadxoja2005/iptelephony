@@ -83,14 +83,11 @@ const Home: FC = () => {
                         data-wow-delay=".2s"
                         data-wow-duration=".4s"
                     >
-                        <AnchorLink href='#site-footer' style={{textDecoration: "none"}}>
+                        <AnchorLink href='#site-footer' style={{ textDecoration: "none" }}>
                             <button className="btn-link m-30" data-target="form">
                                 Оставить заявку
                             </button>
                         </AnchorLink>
-                        {/* <a className="btn-link" href="/calc.html">
-                            расcчитать стоимость
-                        </a> */}
                     </div>
                 </div>
                 <div className="service-modal" id="modal">

@@ -10,7 +10,7 @@ const Service: FC = () => {
             <h2 className="service-advantages_heading">
                 преимущества <span className="golden" />
             </h2>
-            <span className="text-decoration">преимущества</span>
+            {/* <span className="text-decoration">преимущества</span> */}
             <p className="service-intro_description">
                 Звонок, сформированный при помощи IP-телефонии проходит через
                 интернет-канал. В связи с этим звонки становятся в несколько раз
