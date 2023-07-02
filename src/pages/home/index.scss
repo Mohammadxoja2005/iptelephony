@@ -36,6 +36,17 @@ html ::-webkit-scrollbar-thumb {
 body {
   margin: 0;
 }
+
+.header_container {
+  max-width: 1280px;
+  margin: auto;
+} 
+
+.page-main {
+  max-width: 1440px;
+  margin: auto;
+}
+
 .btn-link {
   padding: 0.83vw 1.45vw;
   text-align: center;
@@ -57,7 +68,7 @@ body {
   // left: 0;
   // z-index: 9;
   padding: 3vh 3.38vw;
-  font-size: 0.875rem; 
+  font-size: 0.875rem;
   background: linear-gradient(135deg, #2d2d2d 5%, #373737 95%);
 }
 .menu-item,
