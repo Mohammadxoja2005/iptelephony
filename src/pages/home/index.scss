@@ -1417,8 +1417,8 @@ form {
   margin-right: 25px;
 }
 .advantage-list_item:not(.advantage-list_item-row) {
-  margin-top: 3.125vw;
-  margin-bottom: 3.125vw;
+  margin-top: 2.125vw;
+  // margin-bottom: 3.125vw;
 }
 .advantage-list_item:not(.advantage-list_item-row)::before {
   display: block;
