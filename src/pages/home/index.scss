@@ -1537,6 +1537,15 @@ form {
 @media screen and (max-width: 576px) {
   .service-list_item {
     flex-basis: 100%;
+  } 
+
+  .service-advantages_heading,
+  .service-intro_title {
+    font-size: 1.9em;
+  }  
+
+  .advantage-list {
+    grid-template-columns: 1fr;
   }
 }
 @media screen and (min-width: 577px) and (max-width: 768px) {
