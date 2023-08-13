@@ -13,12 +13,12 @@ const Footer: FC = () => {
             alert("Заполните все поля")
         }
 
-        axios.post("https://backend-itkey.ikcrm.uz/create",
+        axios.post("https://itkey.ikcrm.uz/api/send-data",
             {
-                name: name,
+                token: "base64:YXJkX2FwaV90b2tlbl9oYXNo",
+                fio: name,
                 phone: phone,
-                responsible_id: 9636770,
-                deal_name: "IP-телефония"
+                source: "amomarket.uz",
             }).then(() => {
                 window.location.reload();
             })
