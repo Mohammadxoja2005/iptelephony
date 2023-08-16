@@ -1,10 +1,12 @@
 import { FC, useState } from 'react'
 // axios
 import axios from 'axios'
+import { useNavigate } from 'react-router-dom';
 
 const Footer: FC = () => {
     const [name, setName] = useState<string>('');
     const [phone, setPhone] = useState<string>('');
+    const navigate = useNavigate();
 
     const onSubmit = (e: any) => {
         e.preventDefault();
@@ -18,9 +20,9 @@ const Footer: FC = () => {
                 token: "base64:YXJkX2FwaV90b2tlbl9oYXNo",
                 fio: name,
                 phone: phone,
-                source: "amomarket.uz",
+                source: "crmmarket.uz",
             }).then(() => {
-                window.location.reload();
+                navigate('/notification')
             })
     }
 
@@ -208,6 +210,7 @@ const Footer: FC = () => {
                             onChange={(e) => setPhone(e.target.value)}
                             autoComplete="off"
                             required={true}
+                            style={{ color: "#d29450" }}
                         />
                         {/* <div
                             className="g-recaptcha"
